@@ -200,6 +200,7 @@ class Game {
 Game.gameObjects = [];
 Game.main = document.querySelector("main");
 Game.html = document.querySelector(".container.c-section.section--border");
+Game.gameButton = document.querySelector(".game");
 Game.bool = false;
 window.addEventListener("load", () => {
     Game.singleton();

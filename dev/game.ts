@@ -5,6 +5,7 @@ class Game {
     public static totalBlocks: number;
     public static main:any = document.querySelector("main")
     public static html:any = document.querySelector(".container.c-section.section--border")
+    public static gameButton:any = document.querySelector(".game")
     public static bool:boolean = false
     constructor(){
         Game.html.style.display = "hidden"
@@ -107,4 +108,8 @@ class Game {
 }
 window.addEventListener("load", () => {
     Game.singleton();
-}) 
+})
+
+// Game.gameButton.addEventListener("click", () => {
+//     Game.singleton();
+// })
