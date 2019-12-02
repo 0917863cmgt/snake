@@ -7,7 +7,7 @@ class Game {
     public static html:any = document.querySelector(".container.c-section.section--border")
     public static bool:boolean = false
     constructor(){
-        // Game.html.style.display = "hidden"
+        Game.html.style.display = "hidden"
         Game.addElements()
         Game.fruit = new Fruit()
         Game.gameObjects.push(Game.fruit)
@@ -96,7 +96,7 @@ class Game {
     }
     public static backto404(){
         this.removeElements()
-        // this.html.style.display = "block"
+        this.html.style.display = "block"
     }
 
     public static newGame(){

@@ -111,6 +111,7 @@ class Fruit extends GameObject {
 window.customElements.define("fruit-component", Fruit);
 class Game {
     constructor() {
+        Game.html.style.display = "hidden";
         Game.addElements();
         Game.fruit = new Fruit();
         Game.gameObjects.push(Game.fruit);
@@ -189,6 +190,7 @@ class Game {
     }
     static backto404() {
         this.removeElements();
+        this.html.style.display = "block";
     }
     static newGame() {
         this.removeElements();
