@@ -1,0 +1,3 @@
+interface Behaviour {
+    update():void
+}
